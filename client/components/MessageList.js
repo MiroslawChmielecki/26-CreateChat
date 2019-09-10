@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./MessageList.css";
+import PropTypes from "prop-types";
 
 const Message = props => (
   <div className={styles.Message}>
@@ -15,5 +16,9 @@ const MessageList = props => (
     })}
   </div>
 );
+
+MessageList.propTypes = {
+  messages: PropTypes.array.isRequired
+};
 
 export default MessageList;

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styles from "./UserForm.css";
+import PropTypes from "prop-types";
 
 class UserForm extends Component {
   constructor(props) {
@@ -29,5 +30,9 @@ class UserForm extends Component {
     );
   }
 }
+
+UserForm.propTypes = {
+  onUserSubmit: PropTypes.func.isRequired
+};
 
 export default UserForm;

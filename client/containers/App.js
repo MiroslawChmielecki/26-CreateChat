@@ -3,10 +3,10 @@ import { hot } from "react-hot-loader";
 import io from "socket.io-client";
 import styles from "./App.css";
 
-import MessageForm from "./MessageForm";
-import MessageList from "./MessageList";
-import UsersList from "./UsersList";
-import UserForm from "./UserForm";
+import MessageForm from "../components/MessageForm";
+import MessageList from "../components/MessageList";
+import UsersList from "../components/UsersList";
+import UserForm from "../components/UserForm";
 
 const socket = io("/");
 

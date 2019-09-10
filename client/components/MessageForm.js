@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styles from "./MessageForm.css";
+import PropTypes from "prop-types";
 
 class MessageForm extends Component {
   constructor(props) {
@@ -34,5 +35,9 @@ class MessageForm extends Component {
     );
   }
 }
+
+MessageForm.propTypes = {
+  onMessageSubmit: PropTypes.func.isRequired
+};
 
 export default MessageForm;

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./UsersList.css";
+import PropTypes from "prop-types";
 
 const UsersList = props => (
   <div className={styles.Users}>
@@ -15,5 +16,9 @@ const UsersList = props => (
     </ul>
   </div>
 );
+
+UsersList.propTypes = {
+  users: PropTypes.array.isRequired
+};
 
 export default UsersList;
